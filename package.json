@@ -1,6 +1,9 @@
 {
   "name": "docmate",
   "version": "1.0.0",
+  "engines": {
+    "node": "20.x"
+  },
   "main": "server/server.js",
   "license": "MIT",
   "type": "module",
@@ -13,8 +16,9 @@
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "debug": "^4.3.7",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2",
+    "express": "^4.21.0",
     "express-validator": "^7.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.1",
