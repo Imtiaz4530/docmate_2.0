@@ -2,11 +2,7 @@ import mongoose from "mongoose";
 
 const connectToMongoDB = async () => {
   try {
-    mongoose.set("strictQuery", false);
-    await mongoose.connect(process.env.MONGO_DB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(process.env.MONGO_DB_URI);
 
     console.log("Database Connected 😍");
 
